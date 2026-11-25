@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bobby Kids – a gentle learning game for ages 2–8</title>
+<meta name="description" content="Bobby Kids: first words, quizzes and playful games for children aged 2 to 8. No ads, no data collected. Free to try on Android and iPhone.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Bobby Kids – learn &amp; play">
+<meta property="og:description" content="A gentle learning game for children aged 2 to 8. No ads.">
+<meta property="og:image" content="images/og-image.jpg">
+<link rel="icon" type="image/png" href="images/favicon-32.png">
+<style>
+:root {
+  --sky: #dff1ff; --grass: #2f7d32; --sun: #ffc531; --pink: #e8458b;
+  --text: #23412a; --muted: #4f6b55;
+  --round: "Arial Rounded MT Bold", "Trebuchet MS", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", Roboto, system-ui, sans-serif; color: var(--text); line-height: 1.55;
+  background: linear-gradient(#bfe4ff 0, var(--sky) 380px, #f3fbec 820px, #e7f6d9 100%); min-height: 100vh; }
+a { color: var(--grass); }
+.wrap { max-width: 1000px; margin: 0 auto; padding: 0 18px; }
+
+header { padding: 18px 0 0; }
+.brand { display: inline-flex; align-items: center; gap: 10px; }
+.brand img { width: 48px; height: 48px; border-radius: 13px; box-shadow: 0 2px 6px rgba(0,0,0,.14); }
+.brand b { display: block; font-family: var(--round); font-size: 1.3rem; line-height: 1.1; }
+.brand small { display: block; font-size: .8rem; font-weight: 600; color: var(--muted); }
+
+.hero { display: grid; grid-template-columns: 1.15fr .85fr; gap: 36px; align-items: center; padding: 26px 0 34px; }
+h1 { font-family: var(--round); font-weight: 800; font-size: clamp(2.5rem, 6.5vw, 4.1rem); line-height: 1.04; margin: 0 0 14px; }
+h1 span { color: var(--pink); }
+.lead { font-size: 1.2rem; color: var(--muted); margin: 0 0 20px; }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 26px; padding: 0; list-style: none; }
+.badges li { background: #fff; border-radius: 999px; padding: 6px 14px; font-weight: 700; font-size: .95rem; box-shadow: 0 2px 6px rgba(0,0,0,.08); }
+.stores { display: flex; flex-wrap: wrap; gap: 12px; }
+.cta { display: inline-block; background: var(--sun); color: #3b2a00; font-family: var(--round); font-weight: 800; font-size: 1.15rem;
+  padding: 12px 24px; border-radius: 999px; box-shadow: 0 4px 0 #d89c00; text-decoration: none; }
+a.cta:hover { transform: translateY(-1px); }
+.cta small { display: block; font-family: "Segoe UI", Roboto, system-ui, sans-serif; font-weight: 700; font-size: .8rem; }
+.cta.soon { background: #fff; color: var(--text); box-shadow: 0 4px 0 #cfd8cf; }
+
+.phone { width: 100%; max-width: 290px; margin: 0 auto; border-radius: 34px; border: 10px solid #1f2a22; background: #1f2a22;
+  box-shadow: 0 18px 40px rgba(20,60,20,.25); overflow: hidden; }
+.phone img { display: block; width: 100%; height: auto; border-radius: 24px; }
+
+h2 { font-family: var(--round); font-weight: 800; font-size: 1.9rem; text-align: center; margin: 0 0 18px; }
+.shots { display: flex; justify-content: center; gap: 20px; overflow-x: auto; padding: 4px 4px 18px; scroll-snap-type: x mandatory; }
+.shots figure { flex: 0 0 210px; margin: 0; text-align: center; scroll-snap-align: center; }
+.shots img { width: 100%; height: auto; border-radius: 22px; border: 6px solid #fff; box-shadow: 0 8px 20px rgba(0,0,0,.12); }
+.shots figcaption { font-weight: 700; margin-top: 6px; }
+
+.more { max-width: 640px; margin: 26px auto 0; background: #fff; border-radius: 24px; padding: 24px 26px; text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06); }
+.more p { margin: 0 0 16px; }
+.links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.links a { display: inline-block; padding: 9px 18px; border-radius: 999px; border: 2px solid #d9e9d2; font-family: var(--round);
+  font-weight: 800; text-decoration: none; color: var(--text); }
+.links a:hover { border-color: var(--grass); }
+
+footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 34px 0 30px; }
+
+@media (max-width: 760px) {
+  .hero { grid-template-columns: 1fr; text-align: center; }
+  .badges, .stores { justify-content: center; }
+  .phone { max-width: 240px; }
+  .shots { justify-content: flex-start; }
+}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="brand"><img src="images/icon-96.png" alt="" width="48" height="48"><span><b>Bobby Kids</b><small>by Eldergrove Myths</small></span></div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <h1>Bobby Kids<br><span>learn &amp; play</span></h1>
+      <p class="lead">A gentle first learning game for little ones. Hundreds of colourful pictures with spoken names, simple quizzes and playful games for memory, sorting and shapes.</p>
+      <ul class="badges">
+        <li>Ages 2–8</li>
+        <li>No ads</li>
+        <li>No data collected</li>
+        <li>Free to try</li>
+        <li>English &amp; Bulgarian</li>
+      </ul>
+      <!-- STORE BUTTONS: swap the two "soon" spans for the live links at launch -->
+      <div class="stores">
+        <span class="cta soon">Coming soon to Google Play<small>Android phones and tablets</small></span>
+        <span class="cta soon">Coming soon to the App Store<small>iPhone and iPad</small></span>
+      </div>
+    </div>
+    <div class="phone"><img src="images/home.jpg" alt="Bobby Kids home screen with Learn, Quiz and Play buttons" width="540" height="1168"></div>
+  </section>
+
+  <section>
+    <h2>A peek inside</h2>
+    <div class="shots">
+      <figure><img src="images/learn.jpg" alt="Learn screen with a grid of fruits" loading="lazy" width="540" height="1186"><figcaption>Learn new words</figcaption></figure>
+      <figure><img src="images/memory.jpg" alt="Memory game with animal cards" loading="lazy" width="540" height="1186"><figcaption>Memory game</figcaption></figure>
+      <figure><img src="images/shadow.jpg" alt="Match the Shadow game with vehicles" loading="lazy" width="540" height="1186"><figcaption>Match the shadow</figcaption></figure>
+    </div>
+
+    <div class="more">
+      <p>Made by Eldergrove Myths, a small independent studio. 20% of Bobby Kids income helps sick children whose families cannot afford their treatment.</p>
+      <div class="links">
+        <a href="https://bobbykids.eldergrovemyths.com/?utm_source=ptc" target="_blank" rel="noopener">Bobby Kids website ↗</a>
+        <a href="https://eldergrovemyths.com/?utm_source=ptc" target="_blank" rel="noopener">Eldergrove Myths studio ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Eldergrove Myths</footer>
+
+</body>
+</html>
